@@ -50,6 +50,7 @@ export const useTransactions = create<TransactionsState>()(
     }),
     {
       name: STORAGE_KEYS.transactions,
+      skipHydration: true,
       /**
        * Only persist the transactions array — no derived or transient state
        * needs to be serialised.

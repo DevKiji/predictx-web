@@ -458,6 +458,7 @@ export const useWallet = create<WalletState>()(
     }),
     {
       name: STORAGE_KEYS.wallet,
+      skipHydration: true,
       // Don't persist transient status - always start fresh on page load.
       partialize: (state) => ({
         isConnected: state.isConnected,

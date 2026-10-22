@@ -365,6 +365,6 @@ export const useVoting = create<VotingState>()(
           return { allVotes, pendingRewards };
         }),
     }),
-    { name: STORAGE_KEYS.votes },
+    { name: STORAGE_KEYS.votes, skipHydration: true },
   ),
 );

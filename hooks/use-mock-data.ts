@@ -151,6 +151,7 @@ export const useMockData = create<MockDataState>()(
     }),
     {
       name: STORAGE_KEYS.pools,
+      skipHydration: true,
       /**
        * Partialize to mutable deltas only.
        *

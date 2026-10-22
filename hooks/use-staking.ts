@@ -196,6 +196,7 @@ export const useStaking = create<StakingState>()(
 				})),
 		}),
 		{ name: STORAGE_KEYS.stakes,
+		  skipHydration: true,
 		  /**
 		   * Only persist the raw stakes array — computed selectors (activeStakes,
 		   * pendingStakes, completedStakes) are re-derived on every access so they
